@@ -29,9 +29,11 @@ module.exports = function() {
         } else {
             try {
                 file.contents = new Buffer(stripLog(file.contents.toString()).toString());
+		this.push(file);
             } catch(err) {
                 this.emit('error', new gutil.PluginError('gulp-strip-ng-log', err, {fileName : file.path}));
             }
         }
+	done();
     });
 };
