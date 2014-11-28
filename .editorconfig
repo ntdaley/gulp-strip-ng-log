@@ -1,0 +1,25 @@
+# http://editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+max_line_length = 120
+trim_trailing_whitespace = true
+
+#Java properties files officially use latin1 (ISO-8859-1) for their character set.
+[*.properties]
+charset = latin1
+
+[*.js]
+quote_type = single,
+
+[*.{scss,css}]
+quote_type = single,
+
+[*.{java,js,scss,css}]
+curly_bracket_next_line = false
+

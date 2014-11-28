@@ -1,0 +1,40 @@
+{
+  "name": "gulp-strip-ng-log",
+  "version": "1.0.0",
+  "description": "Gulp plugin to strip calls to AngularJS's $log functions.",
+  "keywords": [
+    "gulp",
+    "plugin",
+    "angularjs",
+    "strip",
+    "remove",
+    "delete",
+    "log",
+    "debug",
+    "logging"
+  ],
+  "homepage": "https://github.com/ntdaley/gulp-strip-ng-log",
+  "issues": "https://github.com/ntdaley/gulp-strip-ng-log/issues",
+  "license": "Apache-2.0",
+  "author": "Nicholas Daley",
+  "files": [
+    "index.js"
+  ],
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ntdaley/gulp-strip-ng-log.git"
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.1",
+    "strip-ng-log": "^1.0.0",
+    "through2": "^0.6.3"
+  },
+  "bugs": {
+    "url": "https://github.com/ntdaley/gulp-strip-ng-log/issues"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

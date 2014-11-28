@@ -1,0 +1,75 @@
+{
+    "requireCurlyBraces" : [
+        "if",
+        "else",
+        "for",
+        "while",
+        "do",
+        "try",
+        "catch"
+    ],
+    "requireSpaceAfterKeywords" : [
+        "return",
+        "typeof"
+    ],
+    "disallowSpaceAfterKeywords" : [
+        "if",
+        "for",
+        "while",
+        "switch",
+        "catch"
+    ],
+    "requireSpaceBeforeBlockStatements" : true,
+    "requireParenthesesAroundIIFE" : true,
+    "requireSpacesInConditionalExpression" : true,
+    "requireSpacesInFunction" : {
+        "beforeOpeningCurlyBrace" : true
+    },
+    "disallowSpacesInFunction" : {
+        "beforeOpeningRoundBrace" : true
+    },
+    "disallowSpacesInCallExpression" : true,
+    "disallowMultipleVarDecl" : true,
+    "requireBlocksOnNewline" : true,
+    "disallowPaddingNewlinesInBlocks" : true,
+    "disallowEmptyBlocks" : true,
+    "disallowDanglingUnderscores" : true,
+    "requireSpaceAfterObjectKeys" : true,
+    "requireSpaceBeforeObjectValues" : true,
+    "requireCommaBeforeLineBreak" : true,
+    "requireOperatorBeforeLineBreak" : true,
+    "disallowSpaceAfterPrefixUnaryOperators" : true,
+    "disallowSpaceBeforePostfixUnaryOperators" : true,
+    "disallowSpaceBeforeBinaryOperators" : [
+        ","
+    ],
+    "requireSpaceAfterBinaryOperators" : [
+        ","
+    ],
+    "disallowImplicitTypeConversion" : [
+        "numeric",
+        "boolean",
+        "binary",
+        "string"
+    ],
+    "requireCamelCaseOrUpperCaseIdentifiers" : true,
+    "disallowKeywords" : [
+        "with"
+    ],
+    "disallowMultipleLineStrings" : true,
+    "disallowMixedSpacesAndTabs" : true,
+    "disallowTrailingWhitespace" : true,
+    "disallowTrailingComma" : true,
+    "disallowKeywordsOnNewLine" : [
+        "else", "catch"
+    ],
+    "requireLineFeedAtFileEnd" : true,
+    "maximumLineLength" : 120,
+    "requireCapitalizedConstructors" : true,
+    "disallowFunctionDeclarations" : true,
+    "disallowNewlineBeforeBlockStatements" : true,
+    "validateLineBreaks" : "LF",
+    "validateQuoteMarks" : "'",
+    "validateParameterSeparator" : ", ",
+    "safeContextKeyword" : ["that"]
+}
