@@ -14,26 +14,10 @@
  * limitations under the License.
  */
 'use strict';
-var gutil = require('gulp-util');
-var through = require('through2');
-var stripLog = require('strip-ng-log');
+var transform = require('gulp-transform-js-ast');
 
 module.exports = function() {
-    return through.obj(function(file, encoding, done) {
-        if(file.isNull()) {
-            done(null, file);
-            return;
-        } else if( file.isStream() ) {
-            done(new gutil.PluginError('gulp-strip-ng-log', 'Streaming not supported'));
-            return;
-        } else {
-            try {
-                file.contents = new Buffer(stripLog(file.contents.toString()).toString());
-		this.push(file);
-            } catch(err) {
-                this.emit('error', new gutil.PluginError('gulp-strip-ng-log', err, {fileName : file.path}));
-            }
-        }
-	done();
+    return transform({
+        visitCallExpression : transform.removeExpressionIf(transform.isCallToMethodIn('$log'))
     });
 };

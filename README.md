@@ -3,8 +3,6 @@ gulp-strip-ng-log
 
 Gulp plugin to strip calls to AngularJS's $log functions.
 
-Inspired by [gulp-strip-debug](https://github.com/sindresorhus/gulp-strip-debug)
-
 Install
 =======
 ```npm install --save gulp-strip-ng-log```
