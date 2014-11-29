@@ -19,6 +19,21 @@ gulp.task('stripLogging', function() {
         .pipe(gulp.dest('build'));
 });
 ```
+or with creation of a sourcemap:
+```
+var gulp = require('gulp');
+var sourcemaps = require('gulp-sourcemaps');
+var stripNgLog = require('gulp-strip-ng-log');
+
+gulp.task('stripLogging', function() {
+    return gulp.src('app/app.js')
+        .pipe(sourcemaps.init())
+        .pipe(stripNgLog())
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('build'));
+});
+```
+
 
 License
 =======
